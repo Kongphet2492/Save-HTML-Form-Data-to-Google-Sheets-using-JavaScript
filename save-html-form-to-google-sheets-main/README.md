@@ -4,7 +4,7 @@ In this system you can save the form data to Google Sheets by Pure Coding
 
 #### How to create an HTML form that stores the submitted form data in Google Sheets using plain 'ol JavaScript (ES6), [Google Apps Script](https://developers.google.com/apps-script/), [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData).
 
-## 1. Create a new Google Sheet
+## 1. Create a new Google Sheet (ສ້າງ File Google Sheets ຂຶ້ນມາ)
 
 - First, go to [Google Sheets](https://docs.google.com/spreadsheets) and `Start a new spreadsheet` with the `Blank` template.
 - Rename it `Email Subscribers`. Or whatever, it doesn't matter.
@@ -16,7 +16,7 @@ In this system you can save the form data to Google Sheets by Pure Coding
 
 > To learn how to add additional input fields, [checkout section 7 below](#7-adding-additional-form-data).
 
-## 2. Create a Google Apps Script
+## 2. Create a Google Apps Script (ໄປທີ່ ສ່ວນຂະຫຍາຍ => Apps Script => ສ້າງ file "Code.gs" ຂຶ້ນມາ)
 
 - Click on `Tools > Script Editor…` which should open a new tab.
 - Rename it `Submit Form to Google Sheets`. _Make sure to wait for it to actually save and update the title before editing the script._
@@ -24,7 +24,7 @@ In this system you can save the form data to Google Sheets by Pure Coding
 - Paste the following script in it's place and `File > Save`:
 
 ```js
-var sheetName = 'Sheet1'
+var sheetName = 'Sheet1' <!--ໃສ່ຊື່ຊີດ -->
 var scriptProp = PropertiesService.getScriptProperties()
 
 function intialSetup () {
